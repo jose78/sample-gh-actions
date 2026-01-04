@@ -1,0 +1,13 @@
+---
+name: build App
+on:
+  push: [main, dev*, feat*, fix*]
+
+
+jobs:
+  load-env-vars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print env vars
+        run: | 
+          env
