@@ -1,7 +1,8 @@
 ---
 name: build App
 on:
-  push: [main, dev*, feat*, fix*]
+  push: 
+    branches: ["main", "dev*", "feat*", "fix*"]
 
 
 jobs:
